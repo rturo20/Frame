@@ -1,0 +1,18 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "GLGraphics",
+      "reason": null,
+      "repositoryURL": "https://github.com/pelmasri/GLGraphics.git",
+      "version": "3.2.0"
+    },
+    {
+      "package": "OpenGL3",
+      "reason": null,
+      "repositoryURL": "https://github.com/pelmasri/OpenGL3.git",
+      "version": "5.0.0"
+    }
+  ],
+  "version": 1
+}
