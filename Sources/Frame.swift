@@ -39,7 +39,7 @@ public func initialiseWindow() {
       exit(-1)
     }
 
-guard let window = glfwCreateWindow(width, height, windowHeader, glfwGetPrimaryMonitor(), nil)
+guard let window = glfwCreateWindow(width, height, windowHeader, glfwSetWindowMonitor(), nil)
   else {
     print("Failed to open a window! I'm out!")
     glfwTerminate()
@@ -52,6 +52,7 @@ glfwMakeContextCurrent(window)
 // Print the OpenGL version currently enabled on your machine
 let version = String(cString: glGetString(UInt32(GL_VERSION)))
 print(version)
+print("Hello Branch TryWindow!")  // temporary print statement to ensure package manager is on correct branch
 
 // Use red to clear the screen
 glClearColor(0, 0, 0, 1)
@@ -68,7 +69,6 @@ while (glfwWindowShouldClose(window) == 0) {
   // Clear the screen (window background)
   glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
-  print("Hello Branch TryWindow!")
   delegate?.drawGraphics()
   test()
   
