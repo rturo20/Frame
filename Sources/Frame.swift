@@ -68,6 +68,7 @@ while (glfwWindowShouldClose(window) == 0) {
   // Clear the screen (window background)
   glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
+  print("Hello Branch TryWindow!")
   delegate?.drawGraphics()
   test()
   
