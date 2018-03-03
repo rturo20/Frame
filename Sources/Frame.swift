@@ -25,6 +25,9 @@ public struct Frame {
   public let height: Int32
   public let windowHeader: String 
 
+  let primary = glfwGetPrimaryMonitor()
+  let mode = glfwGetVideoMode(primary)
+
   public init(width: Int32, height: Int32, windowHeader: String) {
 	self.width = width
 	self.height = height
@@ -39,14 +42,14 @@ public func initialiseWindow() {
       exit(-1)
     }
 
-guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
+guard let window = glfwCreateWindow(width, height, windowHeader, primary, nil)
   else {
     print("Failed to open a window! I'm out!")
     glfwTerminate()
     exit(-1)
 }
 
-glfwSetWindowMonitor(window, glfwGetPrimaryMonitor(), 0, 0, nil, nil, nil)
+glfwSetWindowMonitor(window, primary, 0, 0, mode.width, mode.height, mode.refreshRate)
 
 
 // Set the window context current
