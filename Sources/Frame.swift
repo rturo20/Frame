@@ -39,12 +39,15 @@ public func initialiseWindow() {
       exit(-1)
     }
 
-guard let window = glfwCreateWindow(width, height, windowHeader, glfwSetWindowMonitor(), nil)
+guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
   else {
     print("Failed to open a window! I'm out!")
     glfwTerminate()
     exit(-1)
 }
+
+glfwSetWindowMonitor(window, glfwGetPrimaryMonitor(), 0, 0, mode->width, mode->height, mode->refreshRate)
+
 
 // Set the window context current
 glfwMakeContextCurrent(window)
