@@ -52,7 +52,7 @@ guard let window = glfwCreateWindow(width, height, windowHeader, primary, nil)
     exit(-1)
 }
 
-glfwSetWindowMonitor(window, primary, 0, 0, mode->width, mode->height, mode->refreshRate)
+glfwSetWindowMonitor(window, primary, 0, 0, 400, 400, GLFW_DONT_CARE)
 
 
 // Set the window context current
