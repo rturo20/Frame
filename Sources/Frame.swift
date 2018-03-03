@@ -39,7 +39,7 @@ public func initialiseWindow() {
       exit(-1)
     }
 
-guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
+guard let window = glfwCreateWindow(width, height, windowHeader, glfwGetPrimaryMonitor(), nil)
   else {
     print("Failed to open a window! I'm out!")
     glfwTerminate()
