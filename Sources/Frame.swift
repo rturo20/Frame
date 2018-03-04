@@ -43,7 +43,7 @@ public func initialiseWindow() {
   let mode = glfwGetVideoMode(primary)
 
 
-guard let window = glfwCreateWindow(width, height, windowHeader, primary, nil)
+guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
   else {
     print("Failed to open a window! I'm out!")
     glfwTerminate()
