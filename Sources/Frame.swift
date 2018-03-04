@@ -83,6 +83,15 @@ public struct Frame {
                 print("Mouse Clicked!")
         }
 
+  glfwSetKeyCallback(window, keyCallback = new GLFWKeyCallback()) {
+	@Override
+	public void invoke (long window, int key, int scancode, int action, int mods)
+
+	if (key == GLFW_KEY_W) {
+		print("W)
+	}
+
+  }
 
   }
 
