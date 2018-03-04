@@ -74,11 +74,15 @@ public struct Frame {
 		break
 	} 
 
+
 	if glfwGetKey(window, GLFW_KEY_V) == 1 {
                 print("V")
-                continue
         }
- 
+
+	if glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_1) == 1 {
+                print("Mouse Clicked!")
+        }
+
 
   }
 
