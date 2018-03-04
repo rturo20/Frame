@@ -69,7 +69,7 @@ public struct Frame {
     // Poll for events
     glfwPollEvents()
 	
-	if glfwGetKey(window, GLFW_KEY_V) {
+	if glfwGetKey(window, GLFW_KEY_V) == 1 {
 		print("V")
 	}
 
