@@ -1,5 +1,3 @@
-
-//
 //  Frame.swift
 //
 //  Created by Dan Labbad on 10/02/2018.
@@ -52,7 +50,7 @@ guard let window = glfwCreateWindow(width, height, windowHeader, primary, nil)
     exit(-1)
 }
 
-glfwSetWindowMonitor(window, primary, 0, 0, 100, 100, GLFW_DONT_CARE)
+glfwSetWindowMonitor(window, primary, 100, 100, 100, 100, GLFW_DONT_CARE)
 
 
 // Set the window context current
