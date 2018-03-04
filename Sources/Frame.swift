@@ -86,9 +86,7 @@ public struct Frame {
 
   }
 
-  }
 
-  // Destroy the window and its context
 
   glfwSetKeyCallback(window, keyCallBack)
 
@@ -98,6 +96,7 @@ public struct Frame {
 	}
   }
 
+  // Destroy the window and its context
 
   defer {
     glfwDestroyWindow(window)
@@ -105,6 +104,4 @@ public struct Frame {
   }
 
 }
-
-
 
