@@ -86,7 +86,7 @@ public struct Frame {
 
   }
 
-
+  }
 
   glfwSetKeyCallback(window, keyCallBack)
 
@@ -104,4 +104,5 @@ public struct Frame {
   }
 
 }
+
 
