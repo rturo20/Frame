@@ -71,6 +71,7 @@ public struct Frame {
 	
 	if glfwGetKey(window, GLFW_KEY_V) == 1 {
 		print("V")
+		break
 	}
 
   }
