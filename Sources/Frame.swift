@@ -56,7 +56,7 @@ public struct Frame {
 
   // Set the window context current
   glfwMakeContextCurrent(window)
-  glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
+  //glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
 
 
   // Print the OpenGL version currently enabled on your machine
