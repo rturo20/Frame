@@ -83,19 +83,20 @@ public struct Frame {
                 print("Mouse Clicked!")
         }
 
-  glfwSetKeyCallback(window, keyCallback = new GLFWKeyCallback()) {
-	@Override
-	public void invoke (long window, int key, int scancode, int action, int mods)
-
-	if (key == GLFW_KEY_W) {
-		print("W)
-	}
 
   }
 
   }
 
   // Destroy the window and its context
+
+  glfwSetKeyCallback(window, keyCallBack)
+
+  func keyCallback(window: COpaquePointer, key: Int32, scancode: Int32, action: Int32, mode: Int32)
+	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
+		glfwSetWindowShouldClose(window, GL_TRUE)
+	}
+
 
   defer {
     glfwDestroyWindow(window)
