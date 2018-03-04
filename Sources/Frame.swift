@@ -68,6 +68,11 @@ public struct Frame {
   
     // Poll for events
     glfwPollEvents()
+	
+	if glfwGetKey(window, GLFW_KEY_V) {
+		print("V")
+	}
+
   }
 
   // Destroy the window and its context
