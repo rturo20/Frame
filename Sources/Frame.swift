@@ -96,7 +96,7 @@ public struct Frame {
 
   
 
-  glfwSetKeyCallback(window, keyCallBack)
+  glfwSetKeyCallback(window, keyCallback)
 
   // Destroy the window and its context
 
