@@ -32,50 +32,50 @@ public struct Frame {
   }
 
 
-public func initialiseWindow() {
-    // Initialize GLFW
-    if(glfwInit() == 0) {
-      print("Failed to initialize GLFW! I'm out!")
+  public func initialiseWindow() {
+      // Initialize GLFW
+      if(glfwInit() == 0) {
+        print("Failed to initialize GLFW! I'm out!")
+        exit(-1)
+      }
+
+  guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
+    else {
+      print("Failed to open a window! I'm out!")
+      glfwTerminate()
       exit(-1)
-    }
+  }
 
-guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
-  else {
-    print("Failed to open a window! I'm out!")
+  // Set the window context current
+  glfwMakeContextCurrent(window)
+
+  // Print the OpenGL version currently enabled on your machine
+  let version = String(cString: glGetString(UInt32(GL_VERSION)))
+  print(version)
+
+  // Use red to clear the screen
+  glClearColor(0, 0, 0, 1)
+
+
+  while (glfwWindowShouldClose(window) == 0) {
+    // Clear the screen (window background)
+    glClear(UInt32(GL_COLOR_BUFFER_BIT))
+
+    delegate?.drawGraphics()
+  
+    // Swap front and back buffers for the current window
+    glfwSwapBuffers(window)
+  
+    // Poll for events
+    glfwPollEvents()
+  }
+
+  // Destroy the window and its context
+
+  defer {
+    glfwDestroyWindow(window)
     glfwTerminate()
-    exit(-1)
-}
-
-// Set the window context current
-glfwMakeContextCurrent(window)
-
-// Print the OpenGL version currently enabled on your machine
-let version = String(cString: glGetString(UInt32(GL_VERSION)))
-print(version)
-
-// Use red to clear the screen
-glClearColor(0, 0, 0, 1)
-
-
-while (glfwWindowShouldClose(window) == 0) {
-  // Clear the screen (window background)
-  glClear(UInt32(GL_COLOR_BUFFER_BIT))
-
-  delegate?.drawGraphics()
-  
-  // Swap front and back buffers for the current window
-  glfwSwapBuffers(window)
-  
-  // Poll for events
-  glfwPollEvents()
-}
-
-// Destroy the window and its context
-
-defer {
-  glfwDestroyWindow(window)
-  glfwTerminate()
-}
+  }
 
 }
 }
