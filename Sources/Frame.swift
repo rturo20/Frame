@@ -56,20 +56,12 @@ print(version)
 // Use red to clear the screen
 glClearColor(0, 0, 0, 1)
 
-func test() {
-
-	let Graph = GLGraphics()
-	Graph.drawQuad(red: 0.3, green: 0.4, blue: 1.0, x1: 0.1, y1: 0, x2: 0.4, y2: 0, x3: 0.4,  y3: 0.4, x4: 0.1, y4: 0.4)
-	
-}
-
 
 while (glfwWindowShouldClose(window) == 0) {
   // Clear the screen (window background)
   glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
   delegate?.drawGraphics()
-  test()
   
   // Swap front and back buffers for the current window
   glfwSwapBuffers(window)
