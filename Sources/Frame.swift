@@ -56,6 +56,8 @@ public struct Frame {
 
   // Set the window context current
   glfwMakeContextCurrent(window)
+  glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
+
 
   // Print the OpenGL version currently enabled on your machine
   let version = String(cString: glGetString(UInt32(GL_VERSION)))
@@ -91,7 +93,6 @@ public struct Frame {
                 print("Mouse Clicked!")
         }
 
-  glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
 
 
 
