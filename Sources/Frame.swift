@@ -91,7 +91,7 @@ public struct Frame {
                 print("Mouse Clicked!")
         }
 
-  glfwSetKeyCallback(window, keyCallback) as! GLFWkeyfun
+  glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
 
 
 
