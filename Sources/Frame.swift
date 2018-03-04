@@ -91,12 +91,13 @@ public struct Frame {
                 print("Mouse Clicked!")
         }
 
+  glfwSetKeyCallback(window, keyCallback)
+
+
 
   }
 
   
-
-  glfwSetKeyCallback(window, keyCallback)
 
   // Destroy the window and its context
 
