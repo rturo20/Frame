@@ -60,13 +60,11 @@ public struct Frame {
    func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
 		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			//print("E")
-			//}
+			//}	
 		
-		switch (key, action) {
-		case (GLFW_KEY_E, GLFW_PRESS):
+		switch key {
+		case GLFW_KEY_E:
 			print("E")
-		case (_, GLFW_PRESS):
-			print("Hit return only")
 		default:
 			print("Default")
 		}
