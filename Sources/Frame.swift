@@ -48,7 +48,6 @@ public struct Frame {
   // Set the window context current
   glfwMakeContextCurrent(window)
 
-  glfwSwapInterval(2)
   
   // Print the OpenGL version currently enabled on your machine
   let version = String(cString: glGetString(UInt32(GL_VERSION)))
@@ -56,6 +55,8 @@ public struct Frame {
 
   // Use red to clear the screen
   glClearColor(0, 0, 0, 1)
+
+   glfwSetKeyCallback(window, keyCallback)
 
 
   while (glfwWindowShouldClose(window) == 0) {
@@ -89,6 +90,14 @@ public struct Frame {
         }
   }
   
+
+	func setKeyCallback(window: GLFWwindow*, key: Int, scancode: Int, action: Int, mods: Int) {
+		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+			print("E")
+			}
+		
+	}
+
 
   // Destroy the window and its context
 
