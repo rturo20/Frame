@@ -59,13 +59,13 @@ public struct Frame {
 
   while (glfwWindowShouldClose(window) == 0) {
   
-	var time = glfwGetTime()
+	// var time = glfwGetTime()		
 	
     // Clear the screen (window background)
     glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
     delegate?.drawGraphics()
-    print(time)
+    // print(time)
   
     // Swap front and back buffers for the current window
     glfwSwapBuffers(window)
