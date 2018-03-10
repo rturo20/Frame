@@ -101,7 +101,7 @@ public struct Frame {
   
 
 
-  // Destroy the window and its context
+  // Destroy the window and its context.
 
   defer {
     glfwDestroyWindow(window)
