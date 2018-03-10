@@ -30,6 +30,8 @@ public struct Frame {
 	self.height = height
 	self.windowHeader = windowHeader
   }
+  
+  var time = glfwGetTime()
 
   public func initialiseWindow() {
       // Initialize GLFW
@@ -47,7 +49,6 @@ public struct Frame {
 
   // Set the window context current
   glfwMakeContextCurrent(window)
-  //glfwSetKeyCallback(window, keyCallback as! GLFWkeyfun)
 
 
   // Print the OpenGL version currently enabled on your machine
@@ -64,6 +65,7 @@ public struct Frame {
     glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
     delegate?.drawGraphics()
+    print(time)
   
     // Swap front and back buffers for the current window
     glfwSwapBuffers(window)
