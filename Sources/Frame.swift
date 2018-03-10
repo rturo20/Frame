@@ -59,6 +59,8 @@ public struct Frame {
 
 
   while (glfwWindowShouldClose(window) == 0) {
+	var isFirst = true
+	
     // Clear the screen (window background)
     glClear(UInt32(GL_COLOR_BUFFER_BIT))
 
@@ -77,7 +79,9 @@ public struct Frame {
 
 
 	if glfwGetKey(window, GLFW_KEY_V) == 1 {
+               guard isFirst else { return } 
                 print("V")
+                isFirst = false
         }
 
 	if glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_1) == 1 {
