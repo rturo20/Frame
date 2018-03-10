@@ -57,7 +57,7 @@ public struct Frame {
   glClearColor(0, 0, 0, 1)
 
     
-   func setKeyCallback(window: GLFWwindow*, key: Int32, scanmode: Int32, action: Int32, mods: Int32) {
+   func setKeyCallback(window: GLFWwindow, key: Int32, scanmode: Int32, action: Int32, mods: Int32) {
 		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			print("E")
 			}
