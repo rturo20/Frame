@@ -65,7 +65,7 @@ public struct Frame {
 		switch (key, action) {
 		case (GLFW_KEY_E, GLFW_PRESS):
 			print("E")
-			return
+			break
 		default:
 			print("Default")
 		}
