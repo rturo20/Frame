@@ -58,9 +58,16 @@ public struct Frame {
 
     
    func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
-		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+			//print("E")
+			//}
+		
+		switch self {
+		case (key == GLFW_KEY_E && action == GLFW_PRESS):
 			print("E")
-			}
+		defaut:
+			print("Default")
+		}
 		
 	}
 
@@ -90,7 +97,7 @@ public struct Frame {
 	} 
 
 
-	if glfwGetKey(window, GLFW_KEY_V) == 1 && action == GLFW_PRESS {
+	if glfwGetKey(window, GLFW_KEY_V) == 1 {
                 print("V")
         }
 
