@@ -31,10 +31,6 @@ public struct Frame {
 	self.windowHeader = windowHeader
   }
 
-  }
-
-
-
   public func initialiseWindow() {
       // Initialize GLFW
       if(glfwInit() == 0) {
@@ -103,5 +99,5 @@ public struct Frame {
   }
 
 }
-}
+
 
