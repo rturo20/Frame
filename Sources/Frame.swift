@@ -30,8 +30,6 @@ public struct Frame {
 	self.height = height
 	self.windowHeader = windowHeader
   }
-  
-  var time = glfwGetTime()
 
   public func initialiseWindow() {
       // Initialize GLFW
@@ -60,6 +58,8 @@ public struct Frame {
 
 
   while (glfwWindowShouldClose(window) == 0) {
+  
+	var time = glfwGetTime()
 	
     // Clear the screen (window background)
     glClear(UInt32(GL_COLOR_BUFFER_BIT))
