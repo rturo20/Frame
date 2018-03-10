@@ -62,8 +62,8 @@ public struct Frame {
 			//print("E")
 			//}
 		
-		switch self {
-		case (key == GLFW_KEY_E where action == GLFW_PRESS):
+		switch (key, action) {
+		case (key == GLFW_KEY_E, action == GLFW_PRESS):
 			print("E")
 		default:
 			print("Default")
