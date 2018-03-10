@@ -57,6 +57,13 @@ public struct Frame {
   glClearColor(0, 0, 0, 1)
 
    glfwSetKeyCallback(window, setKeyCallback)
+   
+   func setKeyCallback(window: GLFWwindow*, key: Int32, scanmode: Int32, action: Int32, mods: Int32) {
+		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+			print("E")
+			}
+		
+	}
 
 
   while (glfwWindowShouldClose(window) == 0) {
@@ -91,12 +98,7 @@ public struct Frame {
   }
   
 
-	func setKeyCallback(window) {
-		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
-			print("E")
-			}
-		
-	}
+	
 
 
   // Destroy the window and its context
