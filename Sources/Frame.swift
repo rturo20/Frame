@@ -91,7 +91,7 @@ public struct Frame {
   }
   
 
-	func setKeyCallback(window: window, key: Int32, scancode: Int32, action: Int32, mods: Int32) {
+	func setKeyCallback(window: GLFWwindow, key: Int32, scancode: Int32, action: Int32, mods: Int32) {
 		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			print("E")
 			}
