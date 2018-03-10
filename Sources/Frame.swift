@@ -86,8 +86,6 @@ public struct Frame {
   }
   
 
-  }
-
   // Destroy the window and its context
 
   defer {
@@ -95,6 +93,7 @@ public struct Frame {
     glfwTerminate()
   }
 
+}
 }
 
 
