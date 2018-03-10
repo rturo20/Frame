@@ -83,13 +83,10 @@ public struct Frame {
 	if glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_1) == 1 {
                 print("Mouse Clicked!")
         }
-
-
-
+  }
+  
 
   }
-
-  
 
   // Destroy the window and its context
 
