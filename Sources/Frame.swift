@@ -69,7 +69,7 @@ public struct Frame {
   
     // Swap front and back buffers for the current window
     glfwSwapBuffers(window)
-	glfwSwapInterval(1)
+	glfwSwapInterval(2)
   
     // Poll for events
     glfwPollEvents()
