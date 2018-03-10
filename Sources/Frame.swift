@@ -48,7 +48,8 @@ public struct Frame {
   // Set the window context current
   glfwMakeContextCurrent(window)
 
-
+  glfwSwapInterval(2)
+  
   // Print the OpenGL version currently enabled on your machine
   let version = String(cString: glGetString(UInt32(GL_VERSION)))
   print(version)
@@ -69,7 +70,6 @@ public struct Frame {
   
     // Swap front and back buffers for the current window
     glfwSwapBuffers(window)
-	glfwSwapInterval(2)
   
     // Poll for events
     glfwPollEvents()
