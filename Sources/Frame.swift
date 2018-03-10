@@ -56,7 +56,7 @@ public struct Frame {
   // Use red to clear the screen
   glClearColor(0, 0, 0, 1)
 
-   glfwSetKeyCallback(window, keyCallback)
+   glfwSetKeyCallback(window, setKeyCallback)
 
 
   while (glfwWindowShouldClose(window) == 0) {
