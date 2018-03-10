@@ -56,8 +56,7 @@ public struct Frame {
   // Use red to clear the screen
   glClearColor(0, 0, 0, 1)
 
-   glfwSetKeyCallback(window, setKeyCallback)
-   
+    
    func setKeyCallback(window: GLFWwindow*, key: Int32, scanmode: Int32, action: Int32, mods: Int32) {
 		if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			print("E")
@@ -81,6 +80,9 @@ public struct Frame {
   
     // Poll for events
     glfwPollEvents()
+    
+    glfwSetKeyCallback(window, setKeyCallback)
+  
 	
 	if glfwGetKey(window, GLFW_KEY_Q) == 1 {
 		print("quit")
