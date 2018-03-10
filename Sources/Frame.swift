@@ -90,7 +90,7 @@ public struct Frame {
 	} 
 
 
-	if glfwGetKey(window, GLFW_KEY_V) == 1 {
+	if glfwGetKey(window, GLFW_KEY_V) == 1 && action == GLFW_PRESS {
                 print("V")
         }
 
@@ -99,8 +99,6 @@ public struct Frame {
         }
   }
   
-
-	
 
 
   // Destroy the window and its context
