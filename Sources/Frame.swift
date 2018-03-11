@@ -75,7 +75,7 @@ public struct Frame {
   
 	let time = glfwGetTime()		
 	guard time < 10.0 else { 
-		glfwWindowShouldClose(window) = 1
+		glfwDestroyWindow(window)
 		return
 	}
 	
