@@ -74,7 +74,11 @@ public struct Frame {
 
   while (glfwWindowShouldClose(window) == 0) {
   
-	// var time = glfwGetTime()		
+	var time = glfwGetTime()		
+	guard time < 10.0 else { 
+		glfwWindowShouldClose(window) == 0
+		return
+	}
 	
     // Clear the screen (window background)
     glClear(UInt32(GL_COLOR_BUFFER_BIT))

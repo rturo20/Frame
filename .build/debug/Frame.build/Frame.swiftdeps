@@ -1,0 +1,212 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Graphics"
+- "Frame"
+provides-nominal:
+- "P5Frame8Graphics"
+- "V5Frame5Frame"
+provides-member:
+- ["P5Frame8Graphics", ""]
+- ["V5Frame5Frame", ""]
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- "Frame"
+- !private "GLFW_KEY_E"
+- !private "GLFW_KEY_Q"
+- !private "GLFW_KEY_V"
+- !private "GLFW_MOUSE_BUTTON_1"
+- !private "GL_COLOR_BUFFER_BIT"
+- !private "GL_VERSION"
+- "Graphics"
+- "Int32"
+- !private "IntegerLiteralType"
+- !private "OpaquePointer"
+- !private "Optional"
+- "String"
+- !private "StringLiteralType"
+- !private "UInt32"
+- !private "UnicodeScalarType"
+- !private "exit"
+- !private "glClear"
+- !private "glClearColor"
+- !private "glGetString"
+- !private "glfwCreateWindow"
+- !private "glfwDestroyWindow"
+- !private "glfwGetKey"
+- !private "glfwGetMouseButton"
+- !private "glfwInit"
+- !private "glfwMakeContextCurrent"
+- !private "glfwPollEvents"
+- !private "glfwSetKeyCallback"
+- !private "glfwSwapBuffers"
+- !private "glfwTerminate"
+- !private "glfwWindowShouldClose"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["V5Frame5Frame", "GLFW_KEY_E"]
+- !private ["V5Frame5Frame", "GLFW_KEY_Q"]
+- !private ["V5Frame5Frame", "GLFW_KEY_V"]
+- !private ["V5Frame5Frame", "GLFW_MOUSE_BUTTON_1"]
+- !private ["V5Frame5Frame", "GL_COLOR_BUFFER_BIT"]
+- !private ["V5Frame5Frame", "GL_VERSION"]
+- ["V5Frame5Frame", "Graphics"]
+- ["V5Frame5Frame", "Int32"]
+- !private ["V5Frame5Frame", "OpaquePointer"]
+- !private ["V5Frame5Frame", "Optional"]
+- ["V5Frame5Frame", "String"]
+- !private ["V5Frame5Frame", "UInt32"]
+- ["V5Frame5Frame", "delegate"]
+- !private ["V5Frame5Frame", "exit"]
+- !private ["V5Frame5Frame", "glClear"]
+- !private ["V5Frame5Frame", "glClearColor"]
+- !private ["V5Frame5Frame", "glGetString"]
+- !private ["V5Frame5Frame", "glfwCreateWindow"]
+- !private ["V5Frame5Frame", "glfwDestroyWindow"]
+- !private ["V5Frame5Frame", "glfwGetKey"]
+- !private ["V5Frame5Frame", "glfwGetMouseButton"]
+- !private ["V5Frame5Frame", "glfwInit"]
+- !private ["V5Frame5Frame", "glfwMakeContextCurrent"]
+- !private ["V5Frame5Frame", "glfwPollEvents"]
+- !private ["V5Frame5Frame", "glfwSetKeyCallback"]
+- !private ["V5Frame5Frame", "glfwSwapBuffers"]
+- !private ["V5Frame5Frame", "glfwTerminate"]
+- !private ["V5Frame5Frame", "glfwWindowShouldClose"]
+- ["V5Frame5Frame", "height"]
+- ["V5Frame5Frame", "init"]
+- ["V5Frame5Frame", "initialiseWindow"]
+- !private ["V5Frame5Frame", "print"]
+- ["V5Frame5Frame", "width"]
+- ["V5Frame5Frame", "windowHeader"]
+- ["P5Frame8Graphics", "drawGraphics"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["P10Foundation13_BitShiftable", "init"]
+- !private ["P10Foundation13_CFBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation13_CFBridgeable", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["P10Foundation12_IntegerLike", "init"]
+- !private ["P10Foundation13_NSBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "V5Frame5Frame"
+- "P5Frame8Graphics"
+- !private "Ps8Hashable"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Vs6UInt32"
+- !private "Ps15UnsignedInteger"
+- !private "P10Foundation13_BitShiftable"
+- !private "P10Foundation13_CFBridgeable"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
+- !private "P10Foundation13_NSBridgeable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/Glibc.swiftmodule"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/Dispatch.swiftmodule"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/Foundation.swiftmodule"
+- "/home/pi/Development/swift/code/lib/Frame/.build/debug/GLGraphics.swiftmodule"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/Swift.swiftmodule"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/SwiftOnoneSupport.swiftmodule"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/SwiftStddef.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/AssertionReporting.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/SwiftStdbool.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/RuntimeStubs.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/LibcShims.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/UnicodeShims.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/RuntimeShims.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/FoundationShims.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/GlobalObjects.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/HeapObject.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/SwiftStdint.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/RefCount.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/Visibility.h"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/linux/armv7/glibc.modulemap"
+- "/home/pi/Development/swift/code/lib/Frame/.build/checkouts/OpenGL3.git--538097159/module.modulemap"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/dispatch/module.modulemap"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/CoreFoundation/module.modulemap"
+- "/home/pi/Development/swift/lingua/usr/lib/swift/shims/module.modulemap"
+interface-hash: "21f80bd3111ddd9dc0f50b1bcff9fa1d"
