@@ -38,33 +38,32 @@ public struct Frame {
         exit(-1)
       }
 
-guard public let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
-    else {
-      print("Failed to open a window! I'm out!")
-      glfwTerminate()
-      exit(-1)
-  }
+	guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil) else {
+			print("Failed to open a window! I'm out!")
+			glfwTerminate()
+			exit(-1)
+	}
 
-  // Set the window context current
-  glfwMakeContextCurrent(window)
+	// Set the window context current
+	glfwMakeContextCurrent(window)
 
   
-  // Print the OpenGL version currently enabled on your machine
-  let version = String(cString: glGetString(UInt32(GL_VERSION)))
-  print(version)
+	// Print the OpenGL version currently enabled on your machine
+	let version = String(cString: glGetString(UInt32(GL_VERSION)))
+	print(version)
 
-  // Use red to clear the screen
-  glClearColor(0, 0, 0, 1)
-
+	// Use red to clear the screen
+	glClearColor(0, 0, 0, 1)
    
-  func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
+	func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
 		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			//print("E")
 			//}	
 		
-		switch key {
-		case (GLFW_KEY_E):
+		switch (key, action) {
+		case (GLFW_KEY_E, GLFW_PRESS):
 			print("E")
+			return
 		case (GLFW_KEY_Q):
 			glfwSetWindowShouldClose(window, GL_TRUE)
 		default:
