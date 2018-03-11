@@ -68,7 +68,7 @@ public struct Frame {
 			glfwSetWindowShouldClose(window, GL_TRUE)
 		default:
 			print("Default")
-		}
+		} 
 		
 	} 
    
