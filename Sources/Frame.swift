@@ -45,7 +45,7 @@ public struct Frame {
 	}
 
 	// Set the window aspect ratio
-	glfwSetWindowAspectRatio(window, 16, 9)
+	glfwSetWindowAspectRatio(window, 4, 3)
 
 	// Set the window context current
 	glfwMakeContextCurrent(window)
