@@ -74,9 +74,9 @@ public struct Frame {
 
   while (glfwWindowShouldClose(window) == 0) {
   
-	var time = glfwGetTime()		
+	let time = glfwGetTime()		
 	guard time < 10.0 else { 
-		glfwWindowShouldClose(window) == 0
+		glfwWindowShouldClose(window) == 1
 		return
 	}
 	
