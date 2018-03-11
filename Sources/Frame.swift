@@ -59,8 +59,10 @@ public struct Frame {
 		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
 			//print("E")
 			//}	
+			
+		var keyActionCombo = (key, action)
 		
-		switch (key, action) {
+		switch (keyActionCombo) {
 		case (GLFW_KEY_E, GLFW_RELEASE):
 			print("E")
 			return
