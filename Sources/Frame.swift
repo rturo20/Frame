@@ -57,19 +57,6 @@ public struct Frame {
   glClearColor(0, 0, 0, 1)
 
     
-   func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
-		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
-			//print("E")
-			//}	
-		
-		switch key {
-		case GLFW_KEY_E:
-			print("E")
-		default:
-			print("Default")
-		}
-		
-	}
 
   while (glfwWindowShouldClose(window) == 0) {
   
@@ -93,11 +80,6 @@ public struct Frame {
     
     glfwSetKeyCallback(window, setKeyCallback)
   
-	
-	if glfwGetKey(window, GLFW_KEY_Q) == 1 {
-		print("quit")
-		break
-	} 
 
 
 	if glfwGetKey(window, GLFW_KEY_V) == 1 {
@@ -110,9 +92,24 @@ public struct Frame {
   }
   
 
+	func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
+		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+			//print("E")
+			//}	
+		
+		switch (key, action) {
+		case (GLFW_KEY_E, GLFW_PRESS):
+			print("E")
+		case (GLFW_KEY_Q, GLFW_PRESS):
+			glfwSetWindowShouldClose(window, GL_TRUE)
+		default:
+			//print("Default")
+		}
+		
+	}
+
 
   // Destroy the window and its context.
-
   defer {
     glfwDestroyWindow(window)
     glfwTerminate()
