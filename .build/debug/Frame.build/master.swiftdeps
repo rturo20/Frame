@@ -1,5 +1,0 @@
-version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
-options: "6ad2bca3925c338310739d93e339c950"
-build_time: [574079744, 881584000]
-inputs:
-  "/home/pi/Development/swift/code/lib/Frame/Sources/Frame.swift": [574036687, 0]

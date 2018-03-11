@@ -71,7 +71,6 @@ public struct Frame {
 		
 	}
 
-
   while (glfwWindowShouldClose(window) == 0) {
   
 	let time = glfwGetTime()		

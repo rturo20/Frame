@@ -1,5 +1,0 @@
-version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
-options: "3cf8170071fe8b5c3ac9cfa7b43dd86e"
-build_time: [574079741, 236355000]
-inputs:
-  "/home/pi/Development/swift/code/lib/Frame/.build/checkouts/GLGraphics.git--806140713/Sources/GLGraphics.swift": [574079736, 0]
