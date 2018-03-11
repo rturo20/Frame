@@ -56,22 +56,10 @@ public struct Frame {
 	glClearColor(0, 0, 0, 1)
    
 	func setKeyCallback(window: Optional<OpaquePointer>, key: Int32, scanmode: Int32, action: Int32, mods: Int32)  {
-		//if (key == GLFW_KEY_E && action == GLFW_PRESS) {
-			//print("E")
-			//}	
-			
-		var keyActionCombo = (key, action)
-		
-		switch (keyActionCombo) {
-		case (GLFW_KEY_E, GLFW_RELEASE):
-			print("E")
-			return
-		case (GLFW_KEY_Q, GLFW_RELEASE):
-			glfwSetWindowShouldClose(window, GL_TRUE)
-		default:
-			print("Default")
-		} 
-		
+		if (key == GLFW_KEY_E && action == GLFW_PRESS) { print("E") }	
+		if (key == GLFW_KEY_F && action == GLFW_PRESS) { print("F") }
+		if (key == GLFW_KEY_G && action == GLFW_PRESS) { print("G") }	
+		if (key == GLFW_KEY_Q && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE) }			
 	} 
    
    
