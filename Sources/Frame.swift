@@ -62,10 +62,10 @@ public struct Frame {
 			//print("E")
 			//}	
 		
-		switch (key, action) {
-		case (GLFW_KEY_E, GLFW_PRESS):
+		switch key {
+		case (GLFW_KEY_E):
 			print("E")
-		case (GLFW_KEY_Q && GLFW_PRESS):
+		case (GLFW_KEY_Q):
 			glfwSetWindowShouldClose(window, GL_TRUE)
 		default:
 			print("Default")
