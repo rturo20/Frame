@@ -64,7 +64,7 @@ public struct Frame {
 		case (GLFW_KEY_E, GLFW_PRESS):
 			print("E")
 			return
-		case (GLFW_KEY_Q):
+		case (GLFW_KEY_Q, GLFW_PRESS):
 			glfwSetWindowShouldClose(window, GL_TRUE)
 		default:
 			print("Default")
