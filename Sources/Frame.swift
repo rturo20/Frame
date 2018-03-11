@@ -38,7 +38,7 @@ public struct Frame {
         exit(-1)
       }
 
-  public guard let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
+guard public let window = glfwCreateWindow(width, height, windowHeader, nil, nil)
     else {
       print("Failed to open a window! I'm out!")
       glfwTerminate()
